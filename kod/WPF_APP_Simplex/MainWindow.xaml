@@ -1,0 +1,17 @@
+﻿<Window x:Class="WPF_APP_Simplex.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="902.239" Width="811.567">
+    <Grid>
+        <Label Content="Zadania" HorizontalAlignment="Left" Margin="35,10,0,0" VerticalAlignment="Top" Width="160" FontSize="18"/>
+        <Button x:Name="dodajZadanieBut" Content="Button" HorizontalAlignment="Left" Margin="35,49,0,0" VerticalAlignment="Top" Width="75" Click="dodajZadanieBut_Click"/>
+        <Label Content="Rozwiąż&#xD;&#xA;" HorizontalAlignment="Left" Margin="195,10,0,0" VerticalAlignment="Top" Width="160" FontSize="18"/>
+        <ComboBox x:Name="zadaniaCombo" HorizontalAlignment="Left" Margin="304,10,0,0" VerticalAlignment="Top" Width="384" Height="34" SelectionChanged="zadaniaCombo_SelectionChanged"/>
+        <Canvas x:Name="mainCanvas" HorizontalAlignment="Left" Height="370" Margin="195,93,0,0" VerticalAlignment="Top" Width="560"/>
+        <Button x:Name="buttonNextStep" Content="Next Step" HorizontalAlignment="Left" Margin="633,489,0,0" VerticalAlignment="Top" Width="132" Height="50" Click="buttonNextStep_Click"/>
+        <Label Content="Krok" HorizontalAlignment="Left" Margin="239,489,0,0" VerticalAlignment="Top" Width="102"/>
+        <TextBox x:Name="boxKrok" HorizontalAlignment="Left" Height="23" Margin="341,489,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Iteracja" HorizontalAlignment="Left" Margin="239,537,0,0" VerticalAlignment="Top" Width="102"/>
+        <TextBox x:Name="boxIter" HorizontalAlignment="Left" Height="23" Margin="341,540,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>
